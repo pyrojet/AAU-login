@@ -6,7 +6,7 @@ var app = express();
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-    console.log('Listening on port 80.');
+    console.log('Listening on port ' + port);
 });
 
 app.use(bodyparser.urlencoded({
