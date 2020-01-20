@@ -40,10 +40,10 @@ app.get('/', function (req, res) {
                 },
                 form:{
                     'lognForm': 'lognForm',
-                    'lognForm:j_idt14': req.query.id,
-                    'lognForm:j_idt18': req.query.pass,
-                    'lognForm:j_idt21': '1',
-                    'lognForm:j_idt25': '',
+                    'lognForm:j_idt15': req.query.id,
+                    'lognForm:j_idt19': req.query.pass,
+                    'lognForm:j_idt22': '1',
+                    'lognForm:j_idt26': '',
                     'javax.faces.ViewState': jx
                 },
                 gzip: true,
@@ -54,7 +54,7 @@ app.get('/', function (req, res) {
                 if (response2.request.uri.href == 'http://edugate.aau.edu.jo/faces/ui/login.xhtml')
                     res.send({'result':'error','data':'invalid credentials'});
                 else
-                    res.send({'result':'success','data':$('#contents\\:j_idt156_content > ul > li:nth-child(4) > span.project-detail').text().trim()});
+                    res.send({'result':'success','data':$('#contents\\:j_idt140_content > ul > li:nth-child(4) > span.project-detail').text().trim()});
             }).catch(function(err){
                 res.send({'result':'error','at':'post','data':err.message});
             });
